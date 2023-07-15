@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const ListItemStyles = styled.li`
-  width: calc((100% - 5px) / 5);
+  width: calc((100% - 5px) / 6);
   height: 95vh;
-  margin-bottom: 10px;
+  margin: 8px;
   padding: 10px;
   background-color: ${props =>
     props.selectitem === 'true' ? 'gray' : 'white'};

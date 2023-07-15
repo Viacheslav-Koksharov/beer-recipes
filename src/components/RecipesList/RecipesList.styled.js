@@ -10,6 +10,7 @@ const ContainerStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 15px;
 `;
 
 const BtnStyles = styled.button`
