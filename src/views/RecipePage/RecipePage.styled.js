@@ -1,20 +1,9 @@
 import styled from 'styled-components';
 
-const GoBackButton = styled.button`
-padding: 15px;
-margin-bottom: 20px;
-border-radius: 8px;
-color:white;
-background: #b6303d;
-border: none;
-cursor: pointer;
-font-weight:700;
-    font-size: 16px;
-  &:hover {
-    transform: scale(1.05);
-    opacity:0.9
-  }
-  }`;
+const button = {
+  marginBottom: '20px',
+};
+
 const ImageContainerStyles = styled.div`
   min-width: 100px;
   height: 380px;
@@ -46,7 +35,7 @@ const BoldText = styled.span`
   color: #b6303d;
 `;
 export {
-  GoBackButton,
+  button,
   ImageContainerStyles,
   RecipeCardStyles,
   ContentStyles,

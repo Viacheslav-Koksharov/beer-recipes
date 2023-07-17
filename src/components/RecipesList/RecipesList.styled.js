@@ -13,40 +13,10 @@ const ContainerStyles = styled.div`
   margin-top: 15px;
 `;
 
-const BtnStyles = styled.button`
-  bottom: 10px;
-  left: 50%;
-  padding: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  background-color: #b6303d;
-  border-radius: 8px;
-  border: none;
+const button = {
+  position: 'sticky',
+  bottom: '10px',
+  left: '50%',
+};
 
-  &:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-`;
-
-const ButtonStyles = styled.button`
-  position: sticky;
-  bottom: 10px;
-  left: 50%;
-  padding: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  background-color: #b6303d;
-  border-radius: 8px;
-  border: none;
-
-  &:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-`;
-export { ListStyles, ContainerStyles, BtnStyles, ButtonStyles };
+export { ListStyles, ContainerStyles, button };

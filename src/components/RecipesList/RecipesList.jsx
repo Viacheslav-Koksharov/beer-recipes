@@ -1,8 +1,9 @@
 import { shallow } from 'zustand/shallow';
 import useStore from "../../store/useStore";
 import  RecipesItem  from '../RecipesItem/RecipesItem'
+import Button from '../Button/Button';
 import ScrollTopButton from '../ScrollTopButton/ScrollTopButton';
-import {ListStyles,ContainerStyles,BtnStyles,ButtonStyles} from './RecipesList.styled'
+import {ListStyles,ContainerStyles,button} from './RecipesList.styled'
 
 const RecipesList = () => {
 
@@ -41,12 +42,12 @@ const scrollTo = () => {
        ))}
      </ListStyles>
      <ContainerStyles>
-     <BtnStyles onClick={prev}>PrevPage</BtnStyles>
-     <BtnStyles onClick={next}>NextPage</BtnStyles>
+     <Button  onClick={prev}>PrevPage</Button>
+     <Button  onClick={next}>NextPage</Button>
      </ContainerStyles>
      <ScrollTopButton />
      {selectedRecipes.length>0 ?
-      (<ButtonStyles onClick={()=>removeSelectedRecipes()}>Delete Recipes</ButtonStyles>):null}
+      (<Button style={button} onClick={()=>removeSelectedRecipes()}>Delete Recipes</Button>):null}
  </>
  )
 }

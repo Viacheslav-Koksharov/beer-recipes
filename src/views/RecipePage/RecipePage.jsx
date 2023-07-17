@@ -1,6 +1,7 @@
 import useStore from '../../store/useStore';
 import { useNavigate, useParams} from "react-router-dom";
-import {GoBackButton,RecipeCardStyles,ImageContainerStyles,ContentStyles,TitleStyled,TextStyled,BoldText} from './RecipePage.styled'
+import Button from '../../components/Button/Button';
+import {button,RecipeCardStyles,ImageContainerStyles,ContentStyles,TitleStyled,TextStyled,BoldText} from './RecipePage.styled'
 
 const RecipePage = () => {
   const { recipeId } = useParams();
@@ -14,7 +15,7 @@ const RecipePage = () => {
   }
     return (
       <>
-        <GoBackButton onClick={handleClick}> Go Back</GoBackButton>
+        <Button style={button} onClick={handleClick}> Go Back</Button>
       {recipe ? (
         <RecipeCardStyles>
           <ImageContainerStyles>
