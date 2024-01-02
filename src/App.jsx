@@ -7,7 +7,7 @@ const Homepage = lazy(
   () => import('./views/HomePage/HomePage' /* webpackChunkName: 'HomePage' */),
 );
 const RecipePage = lazy(
-  () => import('./views/RecipePage/RecipePage' /* webpackChunkName: 'HomePage' */),
+  () => import('./views/RecipePage/RecipePage' /* webpackChunkName: 'RecipePage' */),
 );
 
 useStore.getState().fetchRecipes();

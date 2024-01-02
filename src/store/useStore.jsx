@@ -6,6 +6,7 @@ const useStore = create((set, get) => ({
   loading: false,
   error: null,
   numPage: 1,
+  
   selectRecipe: recipe => {
     const selectedRecipes = [...get().selectedRecipes, recipe];
     set({ selectedRecipes });
